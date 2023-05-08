@@ -8,8 +8,8 @@ import 'consts/consts.dart';
 import 'package:get/get.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent),
         fontFamily: regular,
       ),
-      home: LoginScreen(),
+      home: SplashScreen(),
     );
   }
 }
